@@ -1,13 +1,13 @@
 # Fdb version 4
-["xdvipdfmx"] 1728622052.769 "bare_jrnl.xdv" "bare_jrnl.pdf" "bare_jrnl" 1728622053.63862 0
-  "bare_jrnl.xdv" 1728622052 20656 31ed00c9d1b01ae2f33a9dc4e99093a4 "xelatex"
+["xdvipdfmx"] 1728624043.23149 "bare_jrnl.xdv" "bare_jrnl.pdf" "bare_jrnl" 1728624044.13995 0
+  "bare_jrnl.xdv" 1728624043 20676 96aa1dc96384860e931dd385990d010b "xelatex"
   (generated)
   "bare_jrnl.pdf"
   (rewritten before read)
-["xelatex"] 1728622051.50929 "e:/latex/IEEE_ML/bare_jrnl.tex" "bare_jrnl.xdv" "bare_jrnl" 1728622053.63679 0
+["xelatex"] 1728624041.98294 "e:/latex/IEEE_ML/bare_jrnl.tex" "bare_jrnl.xdv" "bare_jrnl" 1728624044.13801 0
   "IEEEtran.cls" 1440606044 281957 5b2e4fa15b0f7eabb840ebf67df4c0f7 ""
-  "bare_jrnl.aux" 1728622052 2459 3b43f1c7c6735b8e7a3d8bdfa5e655c7 "xelatex"
-  "bare_jrnl.tex" 1728622049 11343 69171cf457b18e31b5f69f4c3d56aabb ""
+  "bare_jrnl.aux" 1728624043 2459 d7fe81ad3f3ea8bdb6c2ad7c6848a4cf "xelatex"
+  "bare_jrnl.tex" 1728624039 11327 e8f48f1dd3ad713fc40692fdd3f94b7e ""
   "d:/software/latex/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1728489764 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "d:/software/latex/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr10.tfm" 1728489451 1296 45809c5a464d5f32c8f98ba97c1bb47f ""
   "d:/software/latex/texlive/2024/texmf-dist/tex/latex/base/fontenc.sty" 1728490044 5119 a04a8b68ab4f6ce800a41f7f8012a10e ""
@@ -29,7 +29,7 @@
   "d:/software/latex/texlive/2024/texmf-dist/web2c/texmf.cnf" 1728489190 41649 5d6ae549fbbcb850a863f69aa41f3d10 ""
   "d:/software/latex/texlive/2024/texmf-var/web2c/xetex/xelatex.fmt" 1728533852 10849918 fc29f1e1fce94cb9bcc7a4954f45e49b ""
   "d:/software/latex/texlive/2024/texmf.cnf" 1728533692 713 e69b156964470283e0530f5060668171 ""
-  "e:/latex/IEEE_ML/bare_jrnl.tex" 1728622049 11343 69171cf457b18e31b5f69f4c3d56aabb ""
+  "e:/latex/IEEE_ML/bare_jrnl.tex" 1728624039 11327 e8f48f1dd3ad713fc40692fdd3f94b7e ""
   (generated)
   "bare_jrnl.aux"
   "bare_jrnl.log"
