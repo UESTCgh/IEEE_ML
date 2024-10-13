@@ -68,12 +68,12 @@
 % As a general rule, do not put math, special symbols or citations
 % in the abstract or keywords.
 \begin{abstract}
-随着人工智能的发展和交通安全需求的增加，基于深度学习的目标检测技术在行人头盔佩戴检测中发挥着重要用。在本研究中，针对行人检测场景采用YOLOv8l模型进行头盔检测，并通过稀疏化和剪枝技术对模型进行优化，在高精度的同时提升推理效率。利用稀疏化方法对YOLOv8l模型的权重进行优化，增强模型的稀疏性，减少计算冗余。通过剪枝技术有效去除冗余的网络参数和连接，大幅减少模型的计算量和参数规模，优化后的模型在嵌入式和边缘计算设备上运行效率显著提升。实验结果表明，经过稀疏化和剪枝后的YOLOv8l模型参数量减少了约30\%，推理速度提高了近40\%，并且在行人头盔检测任务中维持了高达98\%的准确率。我们还将优化后的模型与YOLOv3、YOLOv5、YOLOv7等多个版本进行了对比，验证了YOLOv8l在行人检测精度和速度方面的优势。
+	With the acceleration of industrial automation and urbanization, workplace safety issues have received increasing attention. Among various safety measures, the correct wearing of safety helmets is crucial for reducing head injuries. Therefore, developing an efficient and accurate helmet-wearing detection system is vital for improving safety at job sites. This paper proposes an improved model based on YOLOv8 for detecting whether individuals are wearing helmets. The model incorporates two key enhancements: first, a Transformer block replaces the bottleneck in the c2f module to enhance the model's ability to capture spatial features; second, the Convolutional Block Attention Module (CBAM) is integrated into the feature extraction process to further increase the model's focus on important areas and overall detection accuracy. Experimental results show that the modified model significantly improves the accuracy and efficiency of helmet-wearing detection, achieving an accuracy of 94.34\%. This indicates that the improved YOLOv8 can effectively address the practical requirements of helmet detection tasks in traffic scenarios. The modified YOLOv8 model can efficiently detect helmet usage among electric bike riders in real-world settings, playing a crucial role in reducing personal injuries, enhancing road safety, and optimizing intelligent transportation systems.
 \end{abstract}
 
 % Note that keywords are not normally used for peerreview papers.
 \begin{IEEEkeywords}
-交通管理,YOLOv8,头盔检测,深度学习,目标检测
+YOLOv8; Helmet Detection; Transformer; CBAM; Safety Monitoring
 \end{IEEEkeywords}
 
 \IEEEpeerreviewmaketitle
@@ -277,7 +277,10 @@ The conclusion goes here.
 
 %6 总结与展望
 \section{总结与展望}
-The conclusion goes here.
+本文针对人员头盔佩戴检测中面临的诸多挑战，提出了一种基于YOLOv8模型的改进方法。当前检测技术在处理精度不足、小目标和被遮挡目标的误检与漏检现象，以及检测过程的高耗时和复杂性等方面存在显著问题。为了解决这些问题，本文在YOLOv8模型的基础上进行优化，首先用Transformer block替换了c2f中的bottle neck，增强了模型对复杂场景中目标特征的提取能力，同时在特征提取过程中融入了CBAM模块，进一步提升了模型对重点区域的关注度和整体检测精度。改进后的模型显著提高了头盔佩戴检测的准确率和检测效率，实验结果表明，该模型能够很好地应对交通场景中头盔检测任务的实际需求。\par
+此外，改进的YOLOv8模型在实现高精度检测的同时，依然保持了轻量化的优势，确保其在实际应用中的广泛性和便捷性。通过优化主干网络结构以及整合高效的上采样技术，该模型不仅能有效地处理小目标和被遮挡目标，还能够应对复杂背景下的干扰，一定程度的减少误检的发生率。这使得该模型在协助交警和相关执法部门进行自动化执法时具有较大的潜力，能够提高对未佩戴头盔等交通违规行为的检测和查处效率，进而保障交通安全。\par
+然而，尽管改进后的YOLOv8模型展示出了优异的综合性能，仍然存在一些不足。特别是在极端环境条件下，被遮挡目标的检测效果仍有提升空间。因此，未来的研究将进一步考虑采用DETR系列等更先进的神经网络架构和训练策略，以提升模型的鲁棒性和泛化能力。此外对于特定场景，如强光环境或雷雨天气下会出现一定的检测误差，在后续的研究中，会着眼于多种实际场景下的应用，引入迁移学习，提升模型的泛化性。
+
 
 % if have a single appendix:
 %\appendix[Proof of the Zonklar Equations]

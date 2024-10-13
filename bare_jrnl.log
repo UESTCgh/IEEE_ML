@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.10.10)  13 OCT 2024 17:15
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.10.10)  14 OCT 2024 00:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -486,9 +486,9 @@ File: figures/1_2.jpg Graphic file (type bmp)
 File: figures/1_3.jpg Graphic file (type bmp)
 <figures/1_3.jpg>
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Underfull \vbox (badness 2573) has occurred while \output is active []
 
-[1
+ [1
 
 
 ]
@@ -518,18 +518,16 @@ File: ./figures/4_2.png Graphic file (type bmp)
 <./figures/4_2.png>
 File: ./figures/4_3.png Graphic file (type bmp)
 <./figures/4_3.png>
- [4]
 File: ./figures/4_4.png Graphic file (type bmp)
 <./figures/4_4.png>
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
+ [4] [5]
 
 Package caption Warning: Unused \captionsetup[table] on input line 37.
 See the caption package documentation for explanation.
 
-[5] (./bare_jrnl.aux)
+[6
+
+] (./bare_jrnl.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2022/08/05>
@@ -543,12 +541,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 8857 strings out of 474772
- 235860 string characters out of 5754592
- 1985842 words of memory out of 5000000
- 30875 multiletter control sequences out of 15000+600000
- 559681 words of font info for 115 fonts, out of 8000000 for 9000
+ 8818 strings out of 474772
+ 233178 string characters out of 5754592
+ 1972842 words of memory out of 5000000
+ 30837 multiletter control sequences out of 15000+600000
+ 559673 words of font info for 114 fonts, out of 8000000 for 9000
  1351 hyphenation exceptions out of 8191
- 74i,9n,86p,642b,389s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 74i,9n,86p,1440b,389s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on bare_jrnl.xdv (5 pages, 121172 bytes).
+Output written on bare_jrnl.xdv (6 pages, 141216 bytes).
