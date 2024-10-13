@@ -1,13 +1,13 @@
 # Fdb version 4
-["xdvipdfmx"] 1728750812.94345 "bare_jrnl.xdv" "bare_jrnl.pdf" "bare_jrnl" 1728750814.36465 0
-  "bare_jrnl.xdv" 1728750812 73956 bf9511ab2dc6127046a3aa86912322df "xelatex"
+["xdvipdfmx"] 1728788949.03547 "bare_jrnl.xdv" "bare_jrnl.pdf" "bare_jrnl" 1728788950.24283 0
+  "bare_jrnl.xdv" 1728788948 43820 fd874ab98442e5ff1596a556dffc18cb "xelatex"
   (generated)
   "bare_jrnl.pdf"
   (rewritten before read)
-["xelatex"] 1728750811.46972 "e:/latex/IEEE_ML/bare_jrnl.tex" "bare_jrnl.xdv" "bare_jrnl" 1728750814.3616 0
+["xelatex"] 1728788947.6455 "e:/latex/IEEE_ML/bare_jrnl.tex" "bare_jrnl.xdv" "bare_jrnl" 1728788950.24003 0
   "IEEEtran.cls" 1440606044 281957 5b2e4fa15b0f7eabb840ebf67df4c0f7 ""
-  "bare_jrnl.aux" 1728750812 3512 96e6403eb99777d80fca856795109840 "xelatex"
-  "bare_jrnl.tex" 1728750810 14334 87a3e0ecbd6fc8813e999a28a4f3904d ""
+  "bare_jrnl.aux" 1728788948 2457 d5e6e8edd0a9fcf9bd411052e8a23895 "xelatex"
+  "bare_jrnl.tex" 1728788946 9296 473380fea2add7928b977d28d16f3a9d ""
   "d:/software/latex/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1728489764 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "d:/software/latex/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr10.tfm" 1728489451 1296 45809c5a464d5f32c8f98ba97c1bb47f ""
   "d:/software/latex/texlive/2024/texmf-dist/tex/latex/base/fontenc.sty" 1728490044 5119 a04a8b68ab4f6ce800a41f7f8012a10e ""
@@ -42,13 +42,9 @@
   "d:/software/latex/texlive/2024/texmf-dist/web2c/texmf.cnf" 1728489190 41649 5d6ae549fbbcb850a863f69aa41f3d10 ""
   "d:/software/latex/texlive/2024/texmf-var/web2c/xetex/xelatex.fmt" 1728533852 10849918 fc29f1e1fce94cb9bcc7a4954f45e49b ""
   "d:/software/latex/texlive/2024/texmf.cnf" 1728533692 713 e69b156964470283e0530f5060668171 ""
-  "e:/latex/IEEE_ML/bare_jrnl.tex" 1728750810 14334 87a3e0ecbd6fc8813e999a28a4f3904d ""
-  "figures/4_1.png" 1728749871 35913 6b10b08c56514b77198c82d21145f8b9 ""
-  "figures/4_2.png" 1728749881 27965 de15d1622c17d6ddd0a6eb1bccf3826d ""
-  "figures/4_3.png" 1728750791 26904 f4563563ff2e064cc763e4b379bbd428 ""
-  "figures/4_4.png" 1728749905 32814 0e7de5dea973c8368e19ae6d45589e2b ""
-  "figures/部署页面.png" 1728749207 550796 366a70fd3f1ae38efa1c6cf06e24b332 ""
-  "figures/流程图.png" 1728705995 57669 054670f9f80063dacf27e4425c6592dd ""
+  "e:/latex/IEEE_ML/bare_jrnl.tex" 1728788946 9296 473380fea2add7928b977d28d16f3a9d ""
+  "figures/部署页面.png" 1728788080 550796 366a70fd3f1ae38efa1c6cf06e24b332 ""
+  "figures/流程图.png" 1728788080 57669 054670f9f80063dacf27e4425c6592dd ""
   (generated)
   "bare_jrnl.aux"
   "bare_jrnl.log"
