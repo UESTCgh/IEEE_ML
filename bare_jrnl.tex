@@ -58,6 +58,8 @@
 
 \usepackage{xeCJK} % CJK语言环境，使用XeLaTex进行编译
 \usepackage{authblk} % 对应中文部分的作者机构特殊语法
+\usepackage{graphicx}
+\usepackage{caption2}
 
 % 将 authblk 包中的作者连词 and 替换为中文逗号
 \renewcommand*{\Authsep}{，}
@@ -189,7 +191,7 @@
 % As a general rule, do not put math, special symbols or citations
 % in the abstract or keywords.
 \begin{abstract}
-随着人工智能的发展和交通安全需求的增加，基于深度学习的目标检测技术在行人头盔佩戴检测中发挥着重要用。在本研究中，针对行人检测场景采用YOLOv8l模型进行头盔检测，并通过稀疏化和剪枝技术对模型进行优化，在高精度的同时提升推理效率。利用稀疏化方法对YOLOv8l模型的权重进行优化，增强模型的稀疏性，减少计算冗余。通过剪枝技术有效去除冗余的网络参数和连接，大幅减少模型的计算量和参数规模，优化后的模型在嵌入式和边缘计算设备上运行效率显著提升。实验结果表明，经过稀疏化和剪枝后的YOLOv8l模型参数量减少了约30\%，推理速度提高了近40\%，并且在行人头盔检测任务中维持了高达98\%的准确率。我们还将优化后的模型与YOLOv3、YOLOv5、YOLOv7等多个版本进行了对比，验证了YOLOv8l在行人检测精度和速度方面的优势。
+随着人工智能的发展和交通安全需求的增加,基于深度学习的目标检测技术在行人头盔佩戴检测中发挥着重要用。在本研究中，针对行人检测场景采用YOLOv8l模型进行头盔检测，并通过稀疏化和剪枝技术对模型进行优化，在高精度的同时提升推理效率。利用稀疏化方法对YOLOv8l模型的权重进行优化，增强模型的稀疏性，减少计算冗余。通过剪枝技术有效去除冗余的网络参数和连接，大幅减少模型的计算量和参数规模，优化后的模型在嵌入式和边缘计算设备上运行效率显著提升。实验结果表明，经过稀疏化和剪枝后的YOLOv8l模型参数量减少了约30\%，推理速度提高了近40\%，并且在行人头盔检测任务中维持了高达98\%的准确率。我们还将优化后的模型与YOLOv3、YOLOv5、YOLOv7等多个版本进行了对比，验证了YOLOv8l在行人检测精度和速度方面的优势。
 \end{abstract}
 
 % Note that keywords are not normally used for peerreview papers.
@@ -258,16 +260,58 @@ Subsection text here.
 
 %4 调整与改进
 \section{调整与改进}
-The conclusion goes here.
+电动自行车头盔的检测可能由于骑手的高速移动或环境的复杂性而变得颇具挑战性。例如，头盔可能因与摄像头距离较远而成为难以辨识的小目标。针对检测过程中低分辨率图像及小目标检测困难，背景与检测目标相似等问题，改进Yolov8n 模型。传统目标检测网络容易忽略或误判电动车骑行过程中远处、边缘或比例较小的头盔,进而导致漏检或误检。对此需要增强原始YOLOv8n模型以提升对小目标检测精度。
 %4.1 
-\subsection{创新点1}
-Subsection text here.
+\subsection{卷积注意力模块}
+本研究采用了基于卷积注意力机制模块\cite{ref1}(Convolutional Block Attention Module, CBAM)的小目标检测优化策略。CBAM作为一种即插即用的注意力机制模块，可直接嵌入至多种流行的卷积神经网络架构中。该模块通过对输入特征图的不同区域赋予不同的权重，使网络能够更加聚焦于对特定任务具有重要性的信息，同时忽略不相关的信息。因此，在针对佩戴头盔的行人检测任务中，由于目标与摄像头距离较远导致行人及头盔尺寸较小，且在检测图像中所占比例较低，引入CBAM能够使网络更加专注于前景中的小目标，并有效定位感兴趣的区域。这进一步增强了网络的特征提取能力，使得在最小感受野的特征图上能够更精确地识别小目标。CBAM的总体架构如图\Ref{fig:CBAM}所示。
+
+\begin{figure}
+  \centering
+  \includegraphics[width=2.5in]{./picture/CBAM结构图.png}
+  \caption{CBAM结构图}
+  \label{fig:CBAM}
+\end{figure}
+
+对于输入特征图$X\in R^{c\times h\times w}$ ，CBAM先使用通道注意力模块，在宽高维度上对输入进行平均池化和最大池化的操作，得到两个$c\times1\times1$大小的张量。然后，将两个张量分别经过共享卷积层，将输出进行逐元素相加，再经过非线性激活操作，得到通道注意力权值，即大小为$c\times1\times1$的张量。将该权值与输入特征图进行逐元素相乘，得到通道注意力模块的输出特征图$X^{\prime}\in R^{c\times h\times w}$ 。接着，对于通道注意力模块的输出特征图，在通道维度上进行平均池化和最大池化操作，得到两个$1\times h\times w$大小的张量。然后，将两个张量在通道维度上进行拼接，并经过一个卷积操作，将通道维度降为1。最终，经过非线性激活操作，得到空间注意力权值，即大小为$1\times h\times w$的张量。将该权值与通道注意力模块的输出特征图进行逐元素相乘，便得到经过卷积注意力模块处理后的输出特征图。根据论文[1]中的实验结果，在不同的图像分类和目标检测数据集上，将CBAM集成到不同的神经网络模型中后，模型的性能得到很大的提高，这证明了该模块的有效性。
+
+针对YOLOv8n网络，本文将卷积注意力CBAM模块应用在了特征金字塔网络下采样过程中的每一个跨阶段局部模块之后，对不同层次的特征进行融合的Neck部分，模型框架修改后如图\ref{fig:Neck}所示。
+
+\begin{figure}
+  \centering
+  \includegraphics[width=2.5in]{./picture/应用CBAM卷积注意力模块网络Neck部分结构图.png}
+  \caption{应用CBAM卷积注意力模块网络Neck部分结构图.png}
+  \label{fig:Neck}
+\end{figure}
+
 %4.2 
-\subsection{创新点2}
-Subsection text here.
-%4.3 
-\subsection{创新点3}
-Subsection text here.
+\subsection{Transformer Block}
+Transformer\cite{ref2}是一种专为处理序列数据而设计的深度学习架构。该模型利用自注意力机制实现了高效的并行计算，并具备捕获长距离依赖关系的能力。
+
+\begin{figure}
+  \centering
+  \includegraphics[width=2.5in]{./picture/transformer.jpg}
+  \caption{Transformer结构图}
+  \label{fig:Transformer}
+\end{figure}
+
+Transformer的结构如图\ref{fig:Transformer}所示，主要由编码器和解码器两大部分构成。编码器负责将输入信息映射为中间的隐藏状态表示，而解码器则将这些隐藏状态转换为最终的输出序列。编码器由若干相同的编码器层堆叠而成，每一层均包含自注意力机制和前馈神经网络。解码器在结构上与编码器相似，但额外增加了一个注意力层，该层用于关注编码器的输出。
+
+
+多头自注意力机制是Transformer的核心，它使得模型在处理输入序列时能够同时关注序列中不同位置的信息。查询、键和值通过不同的线性变换分成多组（头），然后对每组进行自注意力计算，最后将所有头的输出拼接起来，再次通过一个线性层得到最终的输出。
+
+前馈网络是注意力机制之后的一个关键组件。对注意力层的输出进行进一步的非线性变换，以捕获更复杂的特征和表示。
+
+\begin{figure}
+  \centering
+  \includegraphics[width=2.5in]{./picture/C2f.png}
+  \caption{添加Transformer后的C2f结构图}
+  \label{fig:C2fr}
+\end{figure}
+
+针对YOLOv8n网络，本文在特征处理的中间层C2f中加入Transformer模块，修改后的C2f结构如图\ref{fig:C2fr}所示。通过引入自注意力机制，修改后的模型能够更好地捕捉长距离依赖关系，这有助于模型在处理图像时能够更好地理解全局上下文信息，从而提升特征的表示能力。且由于Transformer block能够有效捕捉全局信息，从而帮助模型在不同的尺度上捕捉到小目标的特征，能够更好地区分头盔与复杂的背景。此外，在YOLOv8n的架构中，特征融合是一个关键环节。Transformer block可以作为一种有效的特征融合工具，通过自注意力机制融合不同层次的特征信息，提高模型在各种环境下的鲁棒性，减少误报和漏报，进一步提升检测性能。
+
+
+
 
 %5 实验结果
 \section{实验结果}
@@ -309,11 +353,11 @@ The authors would like to thank...
 % 参考文献
 \begin{thebibliography}{1}
 
-\bibitem{IEEEhowto:kopka}
-111
+\bibitem{ref1}
+	Woo S, Park J, Lee J Y, et al. CBAM: Convolutional block attention module[C]//Proceedings of the European conference on computer vision (ECCV). 2018: 3-19.
 
-\bibitem{IEEEhowto:kopka}
-222
+\bibitem{ref2}
+Vaswani A. Attention is all you need[J]. Advances in Neural Information Processing Systems, 2017.
 
 \end{thebibliography}
 
