@@ -1,15 +1,21 @@
 # Fdb version 4
-["xdvipdfmx"] 1728788949.03547 "bare_jrnl.xdv" "bare_jrnl.pdf" "bare_jrnl" 1728788950.24283 0
-  "bare_jrnl.xdv" 1728788948 43820 fd874ab98442e5ff1596a556dffc18cb "xelatex"
+["xdvipdfmx"] 1728791862.70246 "bare_jrnl.xdv" "bare_jrnl.pdf" "bare_jrnl" 1728791864.24447 0
+  "bare_jrnl.xdv" 1728791862 101592 e44bc31884c1578978d70b600ef2e6ed "xelatex"
   (generated)
   "bare_jrnl.pdf"
   (rewritten before read)
-["xelatex"] 1728788947.6455 "e:/latex/IEEE_ML/bare_jrnl.tex" "bare_jrnl.xdv" "bare_jrnl" 1728788950.24003 0
+["xelatex"] 1728791861.11481 "e:/latex/IEEE_ML/bare_jrnl.tex" "bare_jrnl.xdv" "bare_jrnl" 1728791864.24087 0
   "IEEEtran.cls" 1440606044 281957 5b2e4fa15b0f7eabb840ebf67df4c0f7 ""
-  "bare_jrnl.aux" 1728788948 2457 d5e6e8edd0a9fcf9bd411052e8a23895 "xelatex"
-  "bare_jrnl.tex" 1728788946 9296 473380fea2add7928b977d28d16f3a9d ""
+  "bare_jrnl.aux" 1728791862 3592 2352d468515a4916ff5227ff7579c6f8 "xelatex"
+  "bare_jrnl.tex" 1728791860 19738 afdc2a893526b6a41a6a8a1f945a3d74 ""
   "d:/software/latex/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1728489764 3524 cb3e574dea2d1052e39280babc910dc8 ""
+  "d:/software/latex/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1728489227 1004 54797486969f23fa377b128694d548df ""
   "d:/software/latex/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr10.tfm" 1728489451 1296 45809c5a464d5f32c8f98ba97c1bb47f ""
+  "d:/software/latex/texlive/2024/texmf-dist/tex/latex/amsmath/amsbsy.sty" 1728489228 2222 499d61426192c39efd8f410ee1a52b9c ""
+  "d:/software/latex/texlive/2024/texmf-dist/tex/latex/amsmath/amsgen.sty" 1728489228 4173 82ac04dfb1256038fad068287fbb4fe6 ""
+  "d:/software/latex/texlive/2024/texmf-dist/tex/latex/amsmath/amsmath.sty" 1728489228 88371 d84032c0f422c3d1e282266c01bef237 ""
+  "d:/software/latex/texlive/2024/texmf-dist/tex/latex/amsmath/amsopn.sty" 1728489228 4474 b811654f4bf125f11506d13d13647efb ""
+  "d:/software/latex/texlive/2024/texmf-dist/tex/latex/amsmath/amstext.sty" 1728489228 2444 0d0c1ee65478277e8015d65b86983da2 ""
   "d:/software/latex/texlive/2024/texmf-dist/tex/latex/base/fontenc.sty" 1728490044 5119 a04a8b68ab4f6ce800a41f7f8012a10e ""
   "d:/software/latex/texlive/2024/texmf-dist/tex/latex/base/ts1cmr.fd" 1728490044 2430 fce77d7e103eb98b6c4d486ae1d466c0 ""
   "d:/software/latex/texlive/2024/texmf-dist/tex/latex/caption/caption.sty" 1728489396 56128 c2ccf1a29d78c33bc553880402e4fb9a ""
@@ -42,9 +48,16 @@
   "d:/software/latex/texlive/2024/texmf-dist/web2c/texmf.cnf" 1728489190 41649 5d6ae549fbbcb850a863f69aa41f3d10 ""
   "d:/software/latex/texlive/2024/texmf-var/web2c/xetex/xelatex.fmt" 1728533852 10849918 fc29f1e1fce94cb9bcc7a4954f45e49b ""
   "d:/software/latex/texlive/2024/texmf.cnf" 1728533692 713 e69b156964470283e0530f5060668171 ""
-  "e:/latex/IEEE_ML/bare_jrnl.tex" 1728788946 9296 473380fea2add7928b977d28d16f3a9d ""
-  "figures/部署页面.png" 1728788080 550796 366a70fd3f1ae38efa1c6cf06e24b332 ""
-  "figures/流程图.png" 1728788080 57669 054670f9f80063dacf27e4425c6592dd ""
+  "e:/latex/IEEE_ML/bare_jrnl.tex" 1728791860 19738 afdc2a893526b6a41a6a8a1f945a3d74 ""
+  "figures/1_1.jpg" 1617956904 37568 a2b4620c0f9098a2055065aec9596aa5 ""
+  "figures/1_2.jpg" 1617956904 113320 130c9e1eb18e31f58fa110c6943f4e08 ""
+  "figures/1_3.jpg" 1617956906 177811 9b70c1371c8e010fdc8a9aa6ac15bd90 ""
+  "figures/4_1.png" 1728789158 35913 6b10b08c56514b77198c82d21145f8b9 ""
+  "figures/4_2.png" 1728789158 27965 de15d1622c17d6ddd0a6eb1bccf3826d ""
+  "figures/4_3.png" 1728789158 26904 f4563563ff2e064cc763e4b379bbd428 ""
+  "figures/4_4.png" 1728789158 32814 0e7de5dea973c8368e19ae6d45589e2b ""
+  "figures/部署页面.png" 1728789158 550796 366a70fd3f1ae38efa1c6cf06e24b332 ""
+  "figures/流程图.png" 1728789158 57669 054670f9f80063dacf27e4425c6592dd ""
   (generated)
   "bare_jrnl.aux"
   "bare_jrnl.log"
