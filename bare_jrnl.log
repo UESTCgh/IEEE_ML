@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.10.10)  13 OCT 2024 11:57
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.10.10)  13 OCT 2024 17:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -384,6 +384,12 @@ Package fontspec Info: Font family 'FandolSong-Regular(0)' created for font
 
 (./bare_jrnl.aux
 
+LaTeX Warning: Label `fig4' multiply defined.
+
+
+LaTeX Warning: Label `fig:' multiply defined.
+
+
 LaTeX Warning: Label `fig:' multiply defined.
 
 )
@@ -486,29 +492,44 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 ]
+File: figures/2_1.jpg Graphic file (type bmp)
+<figures/2_1.jpg>
+File: figures/2_2.jpg Graphic file (type bmp)
+<figures/2_2.jpg>
+File: figures/2_3.jpg Graphic file (type bmp)
+<figures/2_3.jpg>
+File: figures/2_4.jpg Graphic file (type bmp)
+<figures/2_4.jpg>
+File: figures/2_5.jpg Graphic file (type bmp)
+<figures/2_5.jpg>
+File: figures/2_6.jpg Graphic file (type bmp)
+<figures/2_6.jpg>
+File: figures/2_7.jpg Graphic file (type bmp)
+<figures/2_7.jpg>
 File: figures/流程图.png Graphic file (type bmp)
 <figures/流程图.png>
-
-Underfull \vbox (badness 3039) has occurred while \output is active []
-
  [2]
 File: figures/部署页面.png Graphic file (type bmp)
 <figures/部署页面.png>
+ [3]
 File: ./figures/4_1.png Graphic file (type bmp)
 <./figures/4_1.png>
 File: ./figures/4_2.png Graphic file (type bmp)
 <./figures/4_2.png>
 File: ./figures/4_3.png Graphic file (type bmp)
 <./figures/4_3.png>
- [3]
+ [4]
 File: ./figures/4_4.png Graphic file (type bmp)
 <./figures/4_4.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 
 Package caption Warning: Unused \captionsetup[table] on input line 37.
 See the caption package documentation for explanation.
 
-[4] (./bare_jrnl.aux)
+[5] (./bare_jrnl.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2022/08/05>
@@ -522,12 +543,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 8785 strings out of 474772
- 233964 string characters out of 5754592
+ 8857 strings out of 474772
+ 235860 string characters out of 5754592
  1985842 words of memory out of 5000000
- 30810 multiletter control sequences out of 15000+600000
+ 30875 multiletter control sequences out of 15000+600000
  559681 words of font info for 115 fonts, out of 8000000 for 9000
  1351 hyphenation exceptions out of 8191
  74i,9n,86p,642b,389s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on bare_jrnl.xdv (4 pages, 101592 bytes).
+Output written on bare_jrnl.xdv (5 pages, 121172 bytes).
